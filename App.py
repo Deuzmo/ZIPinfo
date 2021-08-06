@@ -53,7 +53,9 @@ class App(tk.Frame):
         self.result_label.grid(row=4, column= 0, columnspan=2, rowspan=2)
 
     def set_country_list(self, countries):
-        self.supported_countries = [*supported_countries]
+        country_list = [*supported_countries]
+        country_list.sort()
+        self.supported_countries = country_list
 
     def output_result(self):
         result = findby_country_and_zip(
