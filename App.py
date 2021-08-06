@@ -22,8 +22,8 @@ class App(tk.Frame):
     def create_widgets(self):
         self.result_frame = tk.Frame(self, borderwidth=3, relief=tk.GROOVE)
         self.text1 = tk.Label(self, text="Find information about a ZIP code from a particular country!")
-        self.text2 = tk.Label(self, text="Select the country: ")
-        self.text3 = tk.Label(self, text="Enter the ZIP code")
+        self.text2 = tk.Label(self, text="Select country: ")
+        self.text3 = tk.Label(self, text="Enter ZIP code:")
         
     
         self.countryvar = tk.StringVar(self, "United States")
